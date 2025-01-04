@@ -1,11 +1,12 @@
 import './App.css'
-import MyComponent from "./components/MyComponent.tsx";
+import {Todos} from "./components/Todos.tsx";
+
 
 function App() {
 
   return (
     <>
-
+        <Todos/>
     </>
   )
 }

@@ -1,0 +1,9 @@
+.complete {
+    background: seagreen;
+    font-style: oblique;
+}
+
+.non-complete{
+    background: coral;
+    font-weight: bold;
+}
