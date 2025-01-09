@@ -3,6 +3,7 @@ import {useEffect, useState} from "react";
 import {ICart} from "../../models/ICart.ts";
 import {ICartResponseModel} from "../../models/ICartResponseModel.ts";
 import {cartService} from "../../services/api.service.ts";
+import {CartComponent} from "../cart-component/CartComponent.tsx";
 
 export const CartsComponent = () => {
 
@@ -22,11 +23,15 @@ export const CartsComponent = () => {
         <div>
             {
                 carts.map((cart: ICart) => (
-                    <div key={cart.id}>
-                        {cart.total}
-                    </div>
+                    <CartComponent key={cart.id} cart={cart}/>
                 ))
             }
         </div>
     );
 };
+
+// carts.map((cart: ICart) => (
+//     <div key={cart.id}>
+//         {cart.total}
+//     </div>
+// ))
