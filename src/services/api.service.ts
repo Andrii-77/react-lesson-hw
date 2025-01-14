@@ -12,6 +12,7 @@ export const getCars = async (): Promise<ICar[]> => {
     const cars = axiosResponse.data;
     console.log(cars);
     return cars;
+    //console.logs не видаляю, можливо знадобляться на майбутнє як зразок для перевірки
 }
 
 export const addCar = async (car: ICar) => {

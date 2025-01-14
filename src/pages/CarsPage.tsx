@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react";
 import {getCars} from "../services/api.service.ts";
 import {ICar} from "../models/ICar.ts";
+import {CarComponent} from "../components/car/CarComponent.tsx";
 
 export const CarsPage = () => {
 
@@ -15,11 +16,7 @@ export const CarsPage = () => {
     return (
         <>
             {
-                cars.map((car) => (
-                    <div key={car.id}>
-                        {car.id} - {car.brand}
-                    </div>
-                ))
+                cars.map((car) => <CarComponent  key={car.id} car={car}/>)
             }
         </>
     );
