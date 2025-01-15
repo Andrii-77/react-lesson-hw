@@ -11,8 +11,8 @@ export const CreateCarComponent = () => {
         resolver: joiResolver(carValidator)
     });
 
-    const createHandler = (data: ICar) => {
-        addCar(data);
+    const createHandler = async (data: ICar) => {
+        await addCar(data);
     }
 
     return (

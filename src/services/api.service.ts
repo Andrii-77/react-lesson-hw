@@ -15,6 +15,6 @@ export const getCars = async (): Promise<ICar[]> => {
     //console.logs не видаляю, можливо знадобляться на майбутнє як зразок для перевірки
 }
 
-export const addCar = async (car: ICar) => {
+export const addCar = async (car: ICar): Promise<void> => {
     await axiosInstance.post('/cars', car);
 }
