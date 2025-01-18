@@ -1,10 +1,10 @@
 import {FC, memo} from "react";
 
-export const UserComponent: FC<{ foo: () => void, arr: number[] }> = memo(({arr}) => {
+export const UserComponent: FC<{ foo: () => void, arr: number[], item: { name: string } }> = memo(({arr, item}) => {
     console.log('user');
     console.log(arr);
 
     return (
-        <div>user</div>
+        <div>{item.name}</div>
     );
 });
