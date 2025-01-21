@@ -1,8 +1,10 @@
 import './App.css'
 import {useFetch} from "./hooks/useFetch.tsx";
+import {IUser} from "./models/IUser.ts";
+import {allUsers} from "./services/api.service.ts";
 
 function App() {
-  const users = useFetch<{ id: number, name: string, email: string; }[]>('https://jsonplaceholder.typicode.com/users', []);
+  const users = useFetch<IUser[]>(allUsers, []);
   return (
     <>
       {
