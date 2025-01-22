@@ -1,7 +1,7 @@
 import './App.css'
 import {useFetch} from "./hooks/useFetch.tsx";
 import {IUser} from "./models/IUser.ts";
-import {allUsers} from "./services/api.service.ts";
+import {allUsers} from "./constants/urls.ts";
 
 function App() {
   const users = useFetch<IUser[]>(allUsers, []);
