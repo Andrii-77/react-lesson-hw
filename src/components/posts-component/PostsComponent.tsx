@@ -15,6 +15,7 @@ export const PostsComponent = () => {
 
     return (
         <>
+            <p>Posts:</p>
             {posts.map((post: IPost) => <PostComponent key={post.id} post={post}/>)}
         </>
     );

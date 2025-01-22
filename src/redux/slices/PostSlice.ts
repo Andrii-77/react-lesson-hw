@@ -9,18 +9,29 @@ type PostSliceType = {
 const initPostSliceState: PostSliceType = {posts: []};
 
 const loadPosts = createAsyncThunk('loadPosts', async (_, thunkAPI) => {
-    const posts = await getAll<IPost[]>('/posts');
-    console.log(posts);
-    return thunkAPI.fulfillWithValue(posts);
+    try {
+        const posts = await getAll<IPost[]>('/posts');
+        console.log(posts);
+        return thunkAPI.fulfillWithValue(posts);
+        // throw new Error();
+    } catch (e) {
+        console.log(e);
+        return thunkAPI.rejectWithValue('Some Posts ERROR');
+    }
 });
 
 export const postSlice = createSlice({
     name: 'postSlice',
     initialState: initPostSliceState,
     reducers: {},
-    extraReducers: builder => builder.addCase(loadPosts.fulfilled, (state, action: PayloadAction<IPost[]>) => {
+    extraReducers: builder => builder
+        .addCase(loadPosts.fulfilled, (state, action: PayloadAction<IPost[]>) => {
         state.posts = action.payload;
-    }),
+    })
+        .addCase(loadPosts.rejected, (state, action) => {
+            console.log(state);
+            console.log(action.payload);
+        })
 });
 
 export const postActions = {...postSlice.actions, loadPosts};

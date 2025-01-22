@@ -3,7 +3,6 @@ import {ComplexComponent} from "../components/complex-component/ComplexComponent
 export const ComplexPage = () => {
     return (
         <>
-            ComplexPage
             <ComplexComponent/>
         </>
     );

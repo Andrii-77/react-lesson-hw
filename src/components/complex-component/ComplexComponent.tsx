@@ -33,10 +33,15 @@ export const ComplexComponent = () => {
 
     return (
         <div>
+            <p>Users:</p>
             {users.map((user: IUser) => <UserComponent key={user.id} user={user}/>)}
             <hr/>
+            <br/>
+            <p>Posts:</p>
             {posts.map((post: IPost) => <PostComponent key={post.id} post={post}/>)}
             <hr/>
+            <br/>
+            <p>Comments:</p>
             {comments.map((comment: IComment) => <CommentComponent key={comment.id} comment={comment}/>)}
         </div>
     );

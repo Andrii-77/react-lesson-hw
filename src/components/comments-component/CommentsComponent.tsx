@@ -15,6 +15,7 @@ export const CommentsComponent = () => {
 
     return (
         <>
+            <p>Comments:</p>
             {comments.map((comment: IComment) => <CommentComponent key={comment.id} comment={comment}/>)}
         </>
     );

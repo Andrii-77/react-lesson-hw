@@ -3,7 +3,6 @@ import {CommentsComponent} from "../components/comments-component/CommentsCompon
 export const CommentsPage = () => {
     return (
         <>
-            CommentsPage
             <CommentsComponent/>
         </>
     );
