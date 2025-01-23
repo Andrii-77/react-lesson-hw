@@ -11,11 +11,12 @@
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react-dom": "^18.3.1"
+    //    1). Завантажуємо три бібліотеки (знизу).
     "axios": "^1.7.9",
     "react-router-dom": "^7.1.2",
     "react-hook-form": "^7.54.2"
-  },
+      },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
     "@types/react": "^18.3.18",

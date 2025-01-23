@@ -1,3 +1,4 @@
+// 19). Ромим компонент Menu і заповюємо його повністю.
 import {Link} from "react-router-dom";
 
 const Menu = () => {

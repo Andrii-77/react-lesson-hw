@@ -1,3 +1,4 @@
+// 4). Створюємо модель даних для продуктів.
 export interface IProduct {
     id: number;
     title: string;
