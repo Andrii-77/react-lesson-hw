@@ -1,4 +1,4 @@
-// 12). Створюю HomePage.
+// 12). Створюю HomePage. Далі йдем в routes.tsx.
 export const HomePage = () => {
     return (
         <>

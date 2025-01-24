@@ -7,7 +7,7 @@ export const MainLayout = () => {
         <>
             {/*20). Впроваджуємо Menu і йдем в LoginPage*/}
             <Menu/>
-            {/*9). Створюємо  Outlet*/}
+            {/*9). Створюємо  Outlet. Далі йдем в routes.tsx*/}
             <Outlet/>
 
         </>

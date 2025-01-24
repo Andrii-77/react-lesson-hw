@@ -1,4 +1,4 @@
-// 19). Ромим компонент Menu і заповюємо його повністю.
+// 19). Ромим компонент Menu і заповюємо його повністю. Далі йдем в MainLayout.tsx.
 import {Link} from "react-router-dom";
 
 const Menu = () => {

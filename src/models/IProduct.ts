@@ -1,4 +1,4 @@
-// 4). Створюємо модель даних для продуктів.
+// 4). Створюємо модель даних для продуктів. Далі формуємо папку routes, файл routes.tsx.
 export interface IProduct {
     id: number;
     title: string;

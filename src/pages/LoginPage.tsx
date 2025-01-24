@@ -1,4 +1,4 @@
-// 14). Створюємо LoginPage.
+// 14). Створюємо LoginPage. Повертаємось в routes.tsx.
 import {useEffect} from "react";
 import {login} from "../services/api.service.ts";
 
